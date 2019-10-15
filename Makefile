@@ -1,5 +1,7 @@
 
-.PHONY: run
+.PHONY : run
+
+.DEFAULT_GOAL := run
 
 MS=small_eso.ms
 
@@ -20,3 +22,5 @@ input/$(MS): input/$(MS).tar
 
 run: .venv/bin/cwltoil input/$(MS)
 	.venv/bin/cwltoil 1GC-pipeline.cwl 1GC-pipeline.yml
+
+all: run
