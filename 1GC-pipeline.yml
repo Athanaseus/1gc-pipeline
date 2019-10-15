@@ -1,0 +1,57 @@
+applycal_applymode: calflag
+applycal_calwt:
+- false
+applycal_field: ESO137-001
+applycal_gainfield:
+- J1939-6342
+- J1939-6342
+- J1939-6342
+applycal_interp:
+- nearest, linear, nearest
+applycal_parang: false
+bpcal_bandtype: B
+bpcal_caltable: gaintable.B0
+bpcal_combine: scan
+bpcal_refant: m048
+bpcal_solint: inf
+delaycal_caltable: gaintable.K0
+delaycal_field: J1939-6342
+delaycal_gaintype: K
+delaycal_refant: m048
+delaycal_solint: inf
+delaycal_uvrange: '>300m'
+gaincal_calmode: ap
+gaincal_caltable: gaintable.G0
+gaincal_combine: ''
+gaincal_gaintype: G
+gaincal_refant: m048
+gaincal_solint: 20s
+getms_mstar:
+  class: File
+  path: input/small_eso.ms.tar
+makeimage_auto-threshold: 5
+makeimage_channels-out: 1
+makeimage_field: 1
+makeimage_mgain: 0.95
+makeimage_name: MeerKATLband_ESO137
+makeimage_niter: 100000
+makeimage_padding: 1.4
+makeimage_scale: 1.5asec
+makeimage_size:
+- 2048
+- 2048
+makeimage_weight: uniform
+obsinfo_listfile: obsinfo.txt
+plot_bandpass_field: 0
+plot_bandpass_gaintype: B
+plot_bandpass_htmlname: bandpass.html
+plot_delays_field: 0
+plot_delays_gaintype: K
+plot_delays_htmlname: delays.html
+plot_gains_field: 0
+plot_gains_gaintype: G
+plot_gains_htmlname: time_gains.html
+setmodel_field: J1939-6342
+setmodel_scalebychan: true
+setmodel_standard: Perley-Butler 2010
+setmodel_usescratch: true

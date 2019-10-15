@@ -102,3 +102,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+input/small_eso.ms.tar
+input/small_eso.ms/
+
